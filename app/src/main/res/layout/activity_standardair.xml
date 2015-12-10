@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView01"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/nav_tsi_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="AirPro Mobile"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView02"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="60dp"
+                    android:src="@drawable/probes_actionbar_logging" />
+
+                <ImageView
+                    android:id="@+id/imageView03"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_bluetooth_white" />
+
+                <ImageView
+                    android:id="@+id/imageView04"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/probes_card_sys" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/nav_tab_probes" />
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="PROBES"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha=".55"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/nav_tab_workflows" />
+
+                    <TextView
+                        android:id="@+id/text21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="WORKFLOWS"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha=".55"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/nav_tab_datafiles" />
+
+                    <TextView
+                        android:id="@+id/text31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="DATA FILES"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="STANDARD AIR DENSITY"
+        android:textColor="#555"
+        android:textIsSelectable="true"
+        android:textSize="13sp" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="VTHCharlie"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:text="ABC12345678"
+                    android:textColor="#555"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/probes_card_probe_settings" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@+id/imageView3"
+                    android:src="@drawable/probes_card_batt_3" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@+id/imageView4"
+                    android:src="@drawable/probes_card_sd_inserted" />
+
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text"
+                    android:text="1234"
+                    android:textColor="#000"
+                    android:textSize="70sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignTop="@+id/text2"
+                    android:layout_marginTop="12dp"
+                    android:layout_toStartOf="@+id/text2"
+                    android:src="@drawable/meas_dial_flow" />
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/probes_card_targetbtn2" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/text2"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginTop="-12dp"
+                    android:text="cfm"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/imageView1"
+                    android:gravity="center_vertical"
+                    android:text="  36 in"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/text5"
+                    android:src="@drawable/probes_card_duct_circular" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#555">
+
+            </View>
+
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_velocity" />
+
+                        <TextView
+                            android:id="@+id/text12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView12"
+                            android:text="84"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text12"
+                            android:layout_below="@+id/text12"
+                            android:text="ft/min"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view13"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text12">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view12"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view13"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_relhumidity" />
+
+                        <TextView
+                            android:id="@+id/text22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView22"
+                            android:text="36"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text22"
+                            android:layout_below="@+id/text22"
+                            android:text="% rh"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view23"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text22">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view22"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view23"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView302"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_temperature" />
+
+                        <TextView
+                            android:id="@+id/text302"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView302"
+                            android:text="76.8"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text303"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text302"
+                            android:layout_below="@+id/text302"
+                            android:text="°F"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view303"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text302">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view302"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view303"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView402"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_temperature" />
+
+                        <TextView
+                            android:id="@+id/text402"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView402"
+                            android:text="76.8"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text403"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text402"
+                            android:layout_below="@+id/text402"
+                            android:text="°F"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view403"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text402">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view402"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view403"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView502"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_temperature" />
+
+                        <TextView
+                            android:id="@+id/text502"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView502"
+                            android:text="76.8"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text503"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text502"
+                            android:layout_below="@+id/text502"
+                            android:text="°F"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view503"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text502">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view502"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view503"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView602"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_temperature" />
+
+                        <TextView
+                            android:id="@+id/text602"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView602"
+                            android:text="76.8"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text603"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text602"
+                            android:layout_below="@+id/text602"
+                            android:text="°F"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view603"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text602">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view602"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view603"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView702"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_temperature" />
+
+                        <TextView
+                            android:id="@+id/text702"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView702"
+                            android:text="76.8"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text703"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text702"
+                            android:layout_below="@+id/text702"
+                            android:text="°F"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view703"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text702">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view702"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view703"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/meas_secondary_temperature" />
+
+                        <TextView
+                            android:id="@+id/text32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_toRightOf="@+id/imageView32"
+                            android:text="76.8"
+                            android:textColor="#555"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/text33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/text32"
+                            android:layout_below="@+id/text32"
+                            android:text="°F"
+                            android:textColor="#555"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view33"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/text32">
+
+                        </View>
+
+                        <View
+                            android:id="@+id/view32"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/view33"
+                            android:background="#555">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+    </View>
+</LinearLayout>
